@@ -21,12 +21,14 @@ function plusTen(num) {
     Write a function `returnSevens(max)` that returns an array that contains
     multiples of 7 that are less than max.
 */
-function printFives(max) {
+function returnSevens(max) {
+    const sevens = [];
     for (let i = 0; i < max; i++) {
-        if (i % 5 === 0) {
-            console.log(i);
+        if (i % 7 === 0) {
+            sevens.push(i);
         }
     }
+    return sevens;
 }
 
 
@@ -125,8 +127,8 @@ function whisper(str) {
 
 module.exports = {
     plusTen,
-    /*
     returnSevens,
+    /*
     bothStringsIncluded,
     productArray,
     fiveAndEleven,
