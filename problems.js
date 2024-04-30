@@ -126,10 +126,24 @@ function countConsonants(word) {
     `.split('')` function on strings to make a copy of the string as an array.
     The `.join('')` function joins the elements in an array into a string.
 */
-function whisper(str) {
-    return str.toLowerCase();
-}
+function alternatingLetters(str) {
+    const arrSplitted = str.split('');
+    const alternateArray = [];
 
+    for (let i=0; i < arrSplitted.length; i++) {
+        if (arrSplitted[i] === ' ') {
+            alternateArray.push(' ');
+        } else {
+            if ((i % 2 === 0) || (i === 0)) {
+                alternateArray.push(arrSplitted[i].toLowerCase());
+            } else {
+                alternateArray.push(arrSplitted[i].toUpperCase());
+            }
+        }
+    }
+
+    return alternateArray.join('');
+}
 
 module.exports = {
     plusTen,
@@ -138,6 +152,5 @@ module.exports = {
     productArray,
     fiveAndEleven,
     countConsonants,
-    /*
-    alternatingLetters*/
+    alternatingLetters
 }
