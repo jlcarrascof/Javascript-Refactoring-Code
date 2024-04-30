@@ -132,8 +132,11 @@ function alternatingLetters(str) {
 
     for (let i=0; i < arrSplitted.length; i++) {
         if (arrSplitted[i] === ' ') {
+
             alternateArray.push(' ');
+
         } else {
+
             if ((i % 2 === 0) || (i === 0)) {
                 alternateArray.push(arrSplitted[i].toLowerCase());
             } else {
