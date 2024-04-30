@@ -61,13 +61,9 @@ function bothStringsIncluded(sentence, word1, word2) {
     you get when you multiply all the numbers together.
 */
 function productArray(arr) {
-    var prodElements = [];
+    var prodElements = 1;
     for (let i = 0; i < arr.length; i++) {
-        if (prodElements === 0) {
-            prodElements = arr[i];
-        } else {
-            prodElements *= arr[i];
-        }
+        prodElements *= arr[i];
     }
     return prodElements;
 }
