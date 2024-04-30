@@ -45,8 +45,8 @@ function returnSevens(max) {
     function should return `true` if *both* `word1` and `word2` are found in
     the sentence, and `false` if neither or only 1 is found.
 */
-function eitherStringIncluded(sentence, word1, word2) {
-    return sentence.includes(word1) || sentence.includes(word2);
+function bothStringsIncluded(sentence, word1, word2) {
+    return sentence.includes(word1) && sentence.includes(word2);
 }
 
 
@@ -128,8 +128,8 @@ function whisper(str) {
 module.exports = {
     plusTen,
     returnSevens,
-    /*
     bothStringsIncluded,
+    /*
     productArray,
     fiveAndEleven,
     countConsonants,
