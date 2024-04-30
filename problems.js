@@ -60,12 +60,12 @@ function bothStringsIncluded(sentence, word1, word2) {
     returns the product of all the numbers. The product of an array  is the number
     you get when you multiply all the numbers together.
 */
-function sumArray(arr) {
-    let sum = 0;
+function productArray(arr) {
+    let product = 0;
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
+        product *= arr[i];
     }
-    return sum;
+    return product;
 }
 
 
@@ -129,8 +129,8 @@ module.exports = {
     plusTen,
     returnSevens,
     bothStringsIncluded,
-    /*
     productArray,
+    /*
     fiveAndEleven,
     countConsonants,
     alternatingLetters*/
