@@ -9,15 +9,11 @@
     you get when you multiply all the numbers together.
 */
 function productArray(arr) {
-    var sumElements = 0;
+    var prodElements = 1;
     for (let i = 0; i < arr.length; i++) {
-        if (sumElements === 0) {
-            sumElements = arr[i];
-        } else {
-            sumElements *= arr[i];
-        }
+        prodElements *= arr[i];
     }
-    return sumElements;
+    return prodElements;
 }
 
 console.log(productArray([5,8,7,3]));
