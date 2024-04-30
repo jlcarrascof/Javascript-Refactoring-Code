@@ -78,8 +78,12 @@ function productArray(arr) {
     Write a function `fiveAndEleven` that takes in a number and returns `true`
     if the number is divisible by BOTH 5 and 11 and `false` otherwise.
 */
-function threeOrSeven(num) {
-    return num % 3 === 0 || num % 7 === 0;
+function fiveAndEleven(num) {
+    if (num % 5 === 0 && num % 11 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
@@ -130,8 +134,8 @@ module.exports = {
     returnSevens,
     bothStringsIncluded,
     productArray,
-    /*
     fiveAndEleven,
+    /*
     countConsonants,
     alternatingLetters*/
 }
